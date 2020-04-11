@@ -1,0 +1,418 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  padding:0px;
+  margin:0px;
+  background:url("greybg.jpg") no-repeat -550px 10px;
+  color:white;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.clear{
+  clear:both;
+}
+
+.subs-btn{
+  padding:8px 10px;
+  color:white;
+  background:#1761a0;
+  border:none;
+}
+
+.subs-btn:hover{
+  background:#3f8ed3;
+  cursor: pointer;
+}
+
+/* Header */
+header{
+  background:#36393e;
+  min-height: 60px;
+  border-bottom: solid #1761a0 5px;
+}
+
+header .branding{
+  float:left;
+}
+
+header .branding h2{
+  float:left
+}
+
+header .branding img{
+  width:60px;
+  height:60px;
+  padding-top:10px;
+  padding-left:5px;
+}
+
+header .highlight{
+  color:#3f8ed3;
+}
+
+header nav{
+  float:right;
+}
+
+header nav a{
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
+}
+
+header nav a:hover{
+  color:#4396df;
+}
+
+header nav ul{
+  padding-top:10px;
+}
+
+header nav li{
+  display:inline;
+  padding-right:30px;
+}
+
+header nav .current{
+  color:#3f8ed3;
+}
+
+/* Section */
+#showcase{
+  min-height: 431px;
+  background: url("webmc.png") no-repeat 0px -120px;
+  text-align: center;
+  line-height: 1.3em;
+  font-size:60px;
+  box-shadow: inset 0px 0px 90px 20px black;
+}
+
+#showcase p{
+  font-size: 35px;
+  margin-top:-70px;
+  margin-bottom:1px;
+}
+
+#showcase span:before{
+  content:'make new friends.';
+  opacity: 0%;
+  animation: wordchange 9s ease-in-out 0s infinite;
+}
+@keyframes wordchange{
+  0%{
+    content:'make new friends.';
+    opacity: 0%;
+  }
+  8.33%{
+    opacity:100%;
+  }
+  25%{
+    opacity:100%;
+  }
+  33.33%{
+    content:'make new friends.';
+    opacity: 0%;
+  }
+  33.34%{
+    content:'get teammates.';
+    opacity: 0%;
+  }
+  41.66%{
+    opacity:100%;
+  }
+  58.33%{
+    opacity: 100%;
+  }
+  66.66%{
+    content:'get teammates.';
+    opacity: 0%;
+  }
+  66.67%{
+    content:'spend your day.';
+    opacity: 0%;
+  }
+  75%{
+    opacity: 100%;
+  }
+  91.66%{
+    opacity: 100%;
+  }
+  100%{
+    content:'spend your day.';
+    opacity: 0%;
+  }
+}
+
+#join-btn{
+  text-decoration: none;
+  color:white;
+  font-size:40px;
+  font-weight: bolder;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding:10px 40px;
+}
+
+#join-btn:hover{
+  animation: glow 1s ease-in-out infinite;
+}
+@keyframes glow{
+  0%{
+    color:white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1761a0, 0 0 40px #1761a0, 0 0 50px #1761a0, 0 0 60px #1761a0, 0 0 70px #1761a0;
+  }
+  50%{
+    color:white;
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f8ed3, 0 0 40px #3f8ed3, 0 0 50px #3f8ed3, 0 0 60px #3f8ed3, 0 0 70px #3f8ed3, 0 0 80px #3f8ed3;
+  }
+  100%{
+    color:white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1761a0, 0 0 40px #1761a0, 0 0 50px #1761a0, 0 0 60px #1761a0, 0 0 70px #1761a0;
+  }
+}
+
+/* Section */
+#newslatter{
+  min-height: 100px;
+  background-color: #36393e;
+}
+
+#newslatter h1{
+  float:left;
+}
+
+#newslatter form{
+  float:right;
+  margin-top:30px;
+}
+
+#newslatter form input{
+  padding:5px;
+  padding-right:40px;
+}
+
+/* Section */
+#detail-1{
+  min-height: 420px;
+  border-bottom:solid #36393e 5px;
+  margin:10px 0;
+}
+
+#detail-1 article{
+  float:left;
+  width:30%;
+}
+
+#detail-1 article ul{
+  list-style-type:'✓  ';
+}
+
+#detail-1 article h1{
+  font-size: 30px;
+  color: #4396df;
+  /* animation: colorchange 20s ease-in-out 0s infinite; */
+}
+  /* @keyframes colorchange{
+    0%{color:#00d9fa;} 14%{color:#F8C300} 28%{color:#d6680e} 43%{color:#F93A2F} 57%{color:#8a2be2} 71%{color:#ff5adb} 86%{color:#00D166} 100%{color:#00d9fa;}
+  } */
+
+#detail-1 aside{
+  float:right;
+  width:60%;
+  height:370px;
+  background: url("gif1.gif") no-repeat -142px -135px;
+  border-radius: 10px;
+  margin:15px;
+}
+
+/* Section */
+#detail-2{
+  min-height: 420px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#detail-2 aside{
+  float:left;
+  width:50%;
+  height:370px;
+  background: url("gif2.gif") no-repeat 0 -90px;
+  border:solid #36393e 5px;
+  border-radius: 10px;
+  margin:15px;
+}
+
+#detail-2 article{
+  float:right;
+  width:40%;
+  margin-top:50px;
+}
+
+#detail-2 article h1{
+  font-size: 40px;
+  color: #4396df;
+  /* animation: colorchange 20s ease-in-out 0s infinite; */
+}
+
+/* footer */
+footer{
+  height:80px;
+  background: #1761a0;
+  text-align: center;
+  padding-top:5px;
+}
+
+/* ABOUT */
+#about{
+  font-weight: bold;
+  line-height: 1.6em;
+  letter-spacing: 0.7px;
+  word-spacing: 3px;
+}
+
+.topic{
+  margin:20px 0;
+  text-align: center;
+  height: 110px;
+  background-image:linear-gradient(to bottom right,#3f8ed3,#1761a0);
+}
+
+.topic h1{
+  font-size: 70px;
+  margin-top:10px;
+}
+
+#csgo{
+  min-height: 300px;
+  background: url("csgo.png") no-repeat -30px -270px;
+}
+
+#fortnite{
+  min-height: 200px;
+  background: url("fortnite.jpg") no-repeat -200px -220px;
+}
+
+#minecraft{
+  min-height: 100px;
+  background:url("minecraft.jpg") no-repeat -700px -1060px;
+}
+
+#dota{
+  min-height: 200px;
+  background:url("dota.jpg") no-repeat -140px -300px;
+}
+
+/* HELP */
+#contact h1{
+  text-align: center;
+  margin-top: 5px;
+}
+
+#form{
+  width: 500px;
+  margin:auto;
+  font-size: 22px;
+  padding:10px 0 30px 40px;
+  border:solid white 2px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#contact form label{
+  display:block;
+  margin-top: 20px;
+}
+
+#contact form input{
+  padding:6px;
+  width:215px;
+  border-radius: 5px;
+  border:none;
+}
+
+#contact form textarea{
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding:5px;
+  margin-top: 2px;
+}
+
+#contact form #buttons{
+  width: 455px;
+  height: 22px;
+  margin-top: 10px;
+}
+
+#buttons button{
+  border-radius: 5px;
+  font-size:15px;
+}
+
+#buttons button:hover{
+  cursor: pointer;
+}
+
+#buttons #clear-btn{
+  padding:8px 20px;
+  color:white;
+  background:none;
+  float:left;
+  border: solid white 1px;
+}
+
+#buttons #clear-btn:hover{
+  box-shadow: 0px 0px 5px white;
+}
+
+#buttons #submit-btn{
+  padding:10px 25px;
+  float:right;
+  background:#1761a0;
+  border:none;
+  color:white;
+}
+
+#buttons #submit-btn:hover{
+  background: #3f8ed3;
+}
+
+/* alert */
+#email-alert, #name-alert{
+  font-size: 12px;
+  color:rgb(255, 46, 46);
+  line-height: 0em;
+  display:none;
+}
+
+/* THANK */
+#thank{
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 2.2em;
+}
+
+#thank h1{
+  font-size: 75px;
+}
+
+#thank h3{
+  font-size:30px ;
+}
+
+#thank p{
+  margin-top: 100px;
+}
+
+#thank p a{
+  color: white;
+}
+
+#thank p a:hover{
+  color: #4396df;
+}
