@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gamer's Server | Communication made easy">
+  <meta name="keywords" content="discord server, gaming communication, make friends">
+  <meta name="author" content="yewyewXD">
+  <link rel="stylesheet" href="web.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Gamer's Server | Help</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="branding">
+        <h2>
+          <span class="highlight">Gamer's </span>Server
+        </h2>
+        <img src="logo.png" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="current" href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="clear"></div>
+
+  <div class="topic">
+    <div class="container">
+      <h1>Help</h1>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="container">
+      <h1>Submit your message here, we'll reply as soon as possible</h1>
+      <div id="form">
+        <form>
+          <label for="name">Name:</label>
+          <p id='name-alert'>Please Enter Name</p>
+          <input id="fname" type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+
+          <label for="email">Email:</label>
+          <p id='email-alert'>Please Enter Email</p>
+          <input id="email" type="email" placeholder="Enter your email...">
+
+          <label for="text">Message:</label>
+          <textarea cols="61" rows="7" id="msg" placeholder="Leave your message..."></textarea>
+          <div id="buttons">
+            <button id="clear-btn">Clear Message</button>
+            <button id="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="clear"></div>
+
+  <section id="newslatter">
+    <div class="container">
+      <h1>Subscribe to our newslatter</h1>
+      <form onsubmit="alert('Successfully Subscribed!')">
+        <input type="email" placeholder="Enter email..." required>
+        <button type="submit" class="subs-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Gamer's Server Copyright © 2020 | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="web.js"></script>
+
+</body>
+
+</html>
