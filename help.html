@@ -45,15 +45,15 @@
     <div class="container">
       <h1>Submit your message here, we'll reply as soon as possible</h1>
       <div id="form">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="thank.html">
           <label for="name">Name:</label>
           <p id='name-alert'>Please Enter Name</p>
-          <input id="fname" name='firstName' type="text" placeholder="First name">
+          <input id="fname" name='firstName' type="text" placeholder="First name" required>
           <input type="text" name='lastName' placeholder="Last name">
 
           <label for="email">Email:</label>
           <p id='email-alert'>Please Enter Email</p>
-          <input id="email" name="email" type="email" placeholder="Enter your email...">
+          <input id="email" name="email" type="email" placeholder="Enter your email..." required>
 
           <label for="text">Message:</label>
           <textarea cols="61" rows="7" id="msg" name="message" placeholder="Leave your message..."></textarea>
